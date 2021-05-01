@@ -7,5 +7,13 @@
 
     <fragment
         android:id="@+id/fragmentB"
-        android:name="com.onshop.bottomnavigationmultistack.b.FragmentB" />
+        android:name="com.onshop.bottomnavigationmultistack.b.FragmentB" >
+        <action
+            android:id="@+id/action_fragmentB_to_fragmentBB"
+            app:destination="@id/fragmentBB" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBB"
+        android:name="com.onshop.bottomnavigationmultistack.b.FragmentBB"
+        android:label="FragmentBB" />
 </navigation>

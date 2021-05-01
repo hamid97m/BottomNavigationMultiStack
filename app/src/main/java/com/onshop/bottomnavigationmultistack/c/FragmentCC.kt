@@ -1,33 +1,28 @@
-package com.onshop.bottomnavigationmultistack.a
+package com.onshop.bottomnavigationmultistack.c
 
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.onshop.bottomnavigationmultistack.R
 
-class FragmentA : Fragment(R.layout.fragment_a) {
+class FragmentCC: Fragment(R.layout.fragment_cc) {
 
     override fun onResume() {
         super.onResume()
-        Log.i("bottomNavigationTest", "onResume-FragmentA")
+        Log.i("bottomNavigationTest", "onResume-FragmentCc")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.i("bottomNavigationTest", "onPause-FragmentA")
+        Log.i("bottomNavigationTest", "onPause-FragmentCc")
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.i("bottomNavigationTest", "onViewCreated-FragmentA")
-        view.findViewById<Button>(R.id.button).setOnClickListener {
-            findNavController().navigate(R.id.action_fragmentA_to_fragmentAA)
-        }
+        Log.i("bottomNavigationTest", "onViewCreated-FragmentCc")
     }
 
     override fun onCreateView(
@@ -35,17 +30,17 @@ class FragmentA : Fragment(R.layout.fragment_a) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        Log.i("bottomNavigationTest", "onCreateView-FragmentA")
+        Log.i("bottomNavigationTest", "onCreateView-FragmentCc")
         return super.onCreateView(inflater, container, savedInstanceState)
     }
 
     override fun onDestroyView() {
-        Log.i("bottomNavigationTest", "onDestroyView-FragmentA")
+        Log.i("bottomNavigationTest", "onDestroyView-FragmentCc")
         super.onDestroyView()
     }
 
     override fun onDestroy() {
-        Log.i("bottomNavigationTest", "onDestroy-FragmentA")
+        Log.i("bottomNavigationTest", "onDestroy-FragmentCc")
         super.onDestroy()
     }
 }
